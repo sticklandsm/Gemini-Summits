@@ -1,0 +1,58 @@
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+button {
+  background: linear-gradient(to left, white 50%, black 50%) right;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 500;
+  background-size: 200% 100%;
+  padding: 5px 10px;
+  border: 1px solid black;
+  font-size: 25px;
+
+  transition:all 600ms ease
+}
+ 
+ 
+
+button:hover {
+
+  color: white;
+  cursor: pointer;
+  position: relative;
+  background-position: left;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+ }
+
+ .center{
+   text-align: center;
+  
+ }
+ 
+
+ body {
+  font-family: 'IBM Plex Mono', monospace;
+ }
+
+
+
+.entrence {
+  width: 100%;
+  object-fit: cover;
+}
+
+.wait-indicator{
+  width: 10%;
+  height: 10%;
+}
+
