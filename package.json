@@ -15,10 +15,10 @@
     "dev:server": "nodemon server/index.ts",
     "build": "run-p build:client build:server",
     "build:client": "npm run webpack -- --mode production",
-    "build:server": "npm run knex -- migrate:latest",
+    "build:server": "npm run",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
-    "webpack": "webpack --config ./client/webpack.config.js",
-    "knex": "knex --knexfile ./server/db/knexfile.js"
+    "webpack": "webpack --config ./client/webpack.config.js"
+
   },
   "babel": {
     "presets": [
@@ -45,8 +45,8 @@
     "ts-node": "^10.9.1",
     "superagent": "^7.1.1"
   },
+  "sqlite3": "^5.1.2",
   "devDependencies": {
-    "sqlite3": "^5.1.2",
     "knex": "^2.3.0",
     "@redux-devtools/extension": "^3.2.3",
     "@babel/core": "^7.15.6",
